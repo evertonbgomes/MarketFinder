@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "576567061583",
+    "project_id": "marketfinder-2e83a",
+    "storage_bucket": "marketfinder-2e83a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576567061583:android:1d49c35b17c1f8ddf48e3a",
+        "android_client_info": {
+          "package_name": "com.example.marketfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576567061583-oo3vavna1ok8lj6jv4r3j0cj2rkf1vs1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx9ZuhvFtxzkW0de_ziQx78phiTjMblbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576567061583-oo3vavna1ok8lj6jv4r3j0cj2rkf1vs1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

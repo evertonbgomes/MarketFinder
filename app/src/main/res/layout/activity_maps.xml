@@ -37,15 +37,19 @@
             android:id="@+id/button_confirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Confirmar"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:layout_margin="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Confirmar" />
 
         <Button
             android:id="@+id/btnLimpar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Limpar"
-            android:layout_margin="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:layout_margin="16dp"
+            android:layout_marginLeft="16dp"/>
 
 
     </LinearLayout>

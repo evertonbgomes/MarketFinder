@@ -16,7 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:enableOnBackInvokedCallback="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MarketFinder"
+        android:theme="@style/Base.Theme.MarketFinder"
         tools:targetApi="tiramisu">
 
         <!--

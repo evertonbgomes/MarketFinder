@@ -1,35 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
     tools:context=".views.MarketDetailActivity">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView_market_name"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="Nome do Mercado" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:gravity="center"
-            android:text="" />
+    <EditText
+        android:id="@+id/editText_market_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Buscar Lat Long"
-            android:onClick="buscarInformacoesGPS"/>
+    <TextView
+        android:id="@+id/textView_market_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereço do Mercado" />
 
-        <WebView
-            android:id="@+id/webv"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+    <EditText
+        android:id="@+id/editText_market_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/button_get_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obter Localização" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latitude: " />
+
+    <TextView
+        android:id="@+id/textView_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Longitude: " />
+
+    <Button
+        android:id="@+id/button_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar" />
+
+</LinearLayout>

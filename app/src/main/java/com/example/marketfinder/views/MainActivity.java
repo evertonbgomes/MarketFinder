@@ -1,6 +1,5 @@
 package com.example.marketfinder.views;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +14,8 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
     private Button buttonLogin;
     private Button buttonNovoMercado;
+    private Button btnMercados;
+
     private FirebaseAuth mAuth;
 
     @Override
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         // Inicializar os componentes da interface
         buttonLogin = findViewById(R.id.buttonLogout);
         buttonNovoMercado = findViewById(R.id.buttonNovoMarket);
+        btnMercados = findViewById(R.id.btnList);
         mAuth = FirebaseAuth.getInstance();
 
         // Definir o listener de clique para o botão de login
@@ -54,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, MarketDetailActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnMercados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MarketListAdapter.class);
                 startActivity(intent);
             }
         });

@@ -68,7 +68,7 @@ public class SignUpActivity extends AppCompatActivity {
                     editConfirmPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
 
                 }else{
-                    editCreatedUsername.setTransformationMethod(PasswordTransformationMethod.getInstance());                    editCreatedPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    editCreatedPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
                     editConfirmPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
 
                 }

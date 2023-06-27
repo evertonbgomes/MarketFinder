@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-    private Button buttonLogin;
+    private Button buttonLogout;
     private Button buttonNovoMercado;
     private Button btnMercados;
 
@@ -35,18 +35,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Inicializar os componentes da interface
-        buttonLogin = findViewById(R.id.buttonLogout);
+        buttonLogout = findViewById(R.id.buttonLogout);
         buttonNovoMercado = findViewById(R.id.buttonNovoMarket);
         btnMercados = findViewById(R.id.btnList);
         mAuth = FirebaseAuth.getInstance();
 
         // Definir o listener de clique para o botão de login
-        buttonLogin.setOnClickListener(new View.OnClickListener() {
+        buttonLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Redirecionar para a tela de login
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
+                mAuth.signOut();
+
             }
         });
 
